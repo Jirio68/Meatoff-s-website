@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мясоff & Гриль</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Подключение Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <h1>Мясоff & Гриль</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Популярные позиции</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>Популярные позиции</h2>
+                <div class="menu-item">
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-front">
+                            <img src="image/shashlik.jpg" alt="Шашлык классический" style="width: 100%; height: auto;">
+                            <h3>Шашлык классический</h3>
+                            <p>Сочный шашлык из свинины, приготовленный на углях. 300 руб.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Нежное свиное мясо, маринованное в секретном соусе, обжаренное на углях до золотистой корочки. Подается с овощами и лавашом.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-front">
+                            <img src="image/lulya-kebab.jpg" alt="Люля-кебаб" style="width: 100%; height: auto;">
+                            <h3>Люля-кебаб</h3>
+                            <p>Нежный фарш из баранины с специями. 350 руб.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Ароматный фарш из отборной баранины, приправленный восточными специями, приготовленный на мангале. Подается с соусом и зеленью.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-front">
+                            <img src="image/ribeye.jpg" alt="Стейк рибай" style="width: 100%; height: auto;">
+                            <h3>Стейк рибай</h3>
+                            <p>Нежнейший стейк из мраморной говядины на гриле. 500 руб.</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Сочный стейк из мраморной говядины высшего качества, приготовленный на гриле с идеальной прожаркой по вашему выбору. Подается с картофелем и соусом.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>О нас</h2>
+                <p style="color: white;">Мясоff & Гриль — место, где вы насладитесь вкусом настоящего мяса, приготовленного на углях с мастерством наших поваров. Мы используем только свежие, качественные ингредиенты, чтобы подарить вам незабываемые гастрономические впечатления в уютной и дружелюбной атмосфере.</p>
+                <div class="about-images">
+                    <img src="image/about1.jpg" alt="Интерьер ресторана" class="about-img">
+                    <img src="image/about2.jpg" alt="Приготовление мяса" class="about-img">
+                    <img src="image/about3.jpg" alt="Блюдо на столе" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Контакты</h2>
+                <p style="color: white;">Адрес: г. Хабаровск, ул. Ленина, 10</p>
+                <p style="color: white;">Телефон: +7 (4212) 123-45-67</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <h3>Мы в социальных сетях</h3>
+            <div class="social-links">
+                <a href="https://t.me/shashlikoff_khabarovsk" target="_blank" class="social-link">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+                <a href="https://vk.com/shashlikoff_khabarovsk" target="_blank" class="social-link">
+                    <i class="fab fa-vk"></i> ВКонтакте
+                </a>
+                <a href="https://eda.yandex.ru/habarovsk/r/shashlykoff" target="_blank" class="social-link">
+                    <i class="fas fa-utensils"></i> Яндекс.Доставка
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
